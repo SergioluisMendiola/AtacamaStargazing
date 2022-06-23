@@ -715,16 +715,14 @@ td {
 /*********************************************************/
 
 
-/************************ NOSOTROS ***********************/
-.nuestros-valores {
+/******************** NUESTROS VALORES *******************/
+.nuestros-valores,
+.nuestro-equipo {
     background-color: var(--colorGrisClaro);
-    padding: 3rem auto;
+    padding: 5rem;
 }
 .no-margin-top {
     margin-top: 0;
-}
-.nuestros-valores {
-    padding: 4rem;
 }
 .grid__valores {
     padding: 3rem 0;
@@ -763,4 +761,18 @@ td {
 .nuestro-equipo__grid--item,
 .nuestro-equipo__grid--item p {
     text-align: center;
+}
+/*********************************************************/
+
+
+/******************** NUESTRA HISTORIA *******************/
+.nuestra-historia {
+    padding: 5rem;
+}
+
+/*********************************************************/
+
+
+.nuestro-equipo {
+    padding-bottom: 12.64rem;
 }
