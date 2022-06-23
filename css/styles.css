@@ -713,3 +713,109 @@ td {
     }
 }
 /*********************************************************/
+
+
+/************************ NOSOTROS ***********************/
+
+.nuestros-valores {
+    background-color: var(--colorGrisClaro);
+    padding: 5rem 0;
+}
+.grid__valores {
+    padding: 3rem 0;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 3rem;
+}
+.grid__valores__item {
+    border-radius: 1rem;
+    background-color: var(--colorBlanco);
+    text-align: justify;
+    padding: 0 2rem;
+}
+.nuestra-historia p {
+    text-align: justify;
+    padding: 0;
+}
+.nuestra-historia p:last-of-type {
+    padding-bottom: 4rem;
+}
+.nuestra-historia h2 {
+    text-align: center;
+    line-height: 1.1;
+    padding: 2rem;
+}
+@media (min-width: 768px) {
+    .bloque-inicial-nosotros {
+        height: 40rem;
+    }
+
+    .grid__valores {
+        padding: 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: unset;
+        column-gap: 3rem;
+    }
+    .grid__valores__item {
+        text-align: justify;
+        padding: 0 2rem;
+    }
+    .nuestra-historia p {
+        text-align: justify;
+        padding: 0 10rem;
+        margin-bottom: 5rem;
+    }
+    .nuestra-historia p:last-of-type {
+        padding-bottom: 4rem;
+    }
+}
+
+.nuestro-equipo {
+    background-color: var(--colorGrisClaro);
+}
+
+.nuestro-equipo h2 {
+    padding-top: 8rem;
+}
+.nuestro-equipo__grid {
+    padding: 1rem 0 10rem 0;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin: 0 auto;
+}
+.nuestro-equipo__grid {
+    display: grid;
+    column-gap: 3.5rem;
+    row-gap: 3.5rem;
+
+}
+.nuestro-equipo__grid--item {
+    background-color: var(--colorBlanco);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: 3rem;
+}
+
+.nuestro-equipo__grid--item source,
+.nuestro-equipo__grid--item img {
+    margin-top: 2rem;
+    width: 35rem;
+    height: 35rem;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 1.5rem;
+}
+
+@media (min-width: 1000px) {
+    .nuestro-equipo__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1500px) {
+    .nuestro-equipo__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
