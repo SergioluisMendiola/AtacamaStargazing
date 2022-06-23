@@ -719,7 +719,7 @@ td {
 .nuestros-valores,
 .nuestro-equipo {
     background-color: var(--colorGrisClaro);
-    padding: 5rem;
+    padding: 5rem 0;
 }
 .no-margin-top {
     margin-top: 0;
@@ -767,12 +767,52 @@ td {
 
 /******************** NUESTRA HISTORIA *******************/
 .nuestra-historia {
-    padding: 5rem;
+    padding: 2rem;
 }
 
 /*********************************************************/
-
-
 .nuestro-equipo {
     padding-bottom: 12.64rem;
+}
+.nuestro-equipo h2 {
+    margin: 2rem 0 4rem 0;
+}
+.nuestro-equipo__grid {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    gap: 5rem;
+}
+
+.nuestro-equipo__grid--item {
+    background-color: var(--colorBlanco);
+    margin: 0 3rem;
+    -webkit-box-shadow: 8px -4px 30px 6px rgba(202,211,219,1);
+-moz-box-shadow: 8px -4px 30px 6px rgba(202,211,219,1);
+box-shadow: 8px -4px 30px 6px rgba(202,211,219,1);
+}
+
+.nuestro-equipo__grid--item img {
+    margin: 3rem 3rem 0 3rem;
+    width: 80%;
+    height: auto;
+    -webkit-box-shadow: 3px -3px 12px 0px #e0dde0;
+    -moz-box-shadow: 3px -3px 12px 0px #e0dde0;
+    box-shadow: 3px -3px 12px 0px #e0dde0;
+}
+@media (min-width: 768px) {
+    .nuestro-equipo__grid {
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 5rem;
+    }
+    .nuestro-equipo__grid--item {
+        margin: 0;
+    }
+}
+@media (min-width: 1024px) {
+    .nuestro-equipo__grid {
+        grid-template-rows: unset;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5rem;
+    }
 }
