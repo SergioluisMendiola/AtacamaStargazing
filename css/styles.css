@@ -135,7 +135,16 @@ html {
 .no-margin {
     margin: 0;
 }
-
+.pagina-activa {
+    color: var(--colorOscuro);
+    background-color: var(--colorPrimario);
+}
+@media (min-width: 768px) {
+    .pagina-activa {
+        color: var(--colorPrimario);
+        background-color: var(--colorSecundario);
+    } 
+}
 /* WHATSAPP FLOATING ICON */
 .float{
 	position:fixed;
@@ -346,7 +355,7 @@ td {
     .navbar__items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 0.5rem;
+        /* column-gap: 0.5rem; */
         align-items: center;
     }
 
@@ -359,6 +368,8 @@ td {
     .navbar__items--item:hover {
         background-color: var(--colorPrimario);
         color: var(--colorOscuro);
+        border-left: 2px solid var(--colorSecundario);
+        border-right: 2px solid var(--colorSecundario);
     }
 }
 /********* TABLET SIZE *********/
@@ -380,6 +391,7 @@ td {
     .navbar__items--item:hover {
         background-color: var(--colorSecundario);
         color: var(--colorPrimario);
+        border: 0;
     }
     .navbar__logo--img {
         width: 3rem;
