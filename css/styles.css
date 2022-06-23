@@ -745,7 +745,7 @@ td {
     line-height: 1.1;
     padding: 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .bloque-inicial-nosotros {
         height: 40rem;
     }
@@ -809,12 +809,12 @@ td {
     border-radius: 1.5rem;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
     .nuestro-equipo__grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1024px) {
     .nuestro-equipo__grid {
         grid-template-columns: repeat(3, 1fr);
     }
