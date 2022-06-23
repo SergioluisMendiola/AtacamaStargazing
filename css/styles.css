@@ -716,7 +716,9 @@ td {
 
 
 /************************ NOSOTROS ***********************/
-
+.imagen {
+    width: 252px;
+}
 .nuestros-valores {
     background-color: var(--colorGrisClaro);
     padding: 5rem 0;
