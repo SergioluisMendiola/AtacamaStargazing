@@ -71,7 +71,7 @@ html {
 
 /*********************** UTILIDADES **********************/
 .b-radius {
-    border-radius: 1.5rem;
+    border-radius: 5%;
 }
 .color-rojo {
     color: red;
@@ -650,6 +650,9 @@ td {
     justify-content: center;
     padding-bottom: 5rem;
 }
+.calendarios table {
+    margin: 0 auto;
+}
 .mes {
     margin-top: 5rem;
     text-align: center;
@@ -663,11 +666,11 @@ td {
 }
 .mes-img source,
 .mes-img img {
-    width: 32rem;
-    height: 32rem;
+    width: 215px;
+    height: auto;
     object-fit: cover;
     object-position: bottom;
-    border-radius: 0.5rem;
+    margin-bottom: 2rem;
 }
 .enabled:hover {
     background-color: var(--colorSecundario);
@@ -685,19 +688,28 @@ td {
     opacity: 0.6;
     color: var(--colorGris);
   }
+@media (min-width: 480px) {
+    .mes-img img {
+        width: 247px;
+    }
+}
 @media (min-width: 1024px) {
     .calendarios {
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 0.2rem;
     }
     .mes {
         border:none;
     }
-    .mes table {
-        margin: 0 auto;
-    }
     .mes-img {
         margin: 0 auto;
+    }
+    .mes-img img {
+        width: 279px;
+    }
+}
+@media (min-width: 1280px) {
+    .mes-img img {
+        width: 311px;
     }
 }
 /*********************************************************/
