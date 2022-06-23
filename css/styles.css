@@ -779,7 +779,7 @@ td {
 }
 .nuestro-equipo__grid {
     display: grid;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     gap: 5rem;
 }
 
