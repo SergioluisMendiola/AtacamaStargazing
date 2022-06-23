@@ -15,7 +15,7 @@
 /*********************************************************/
 
 
-/************ CORRECCIÓN DE MARGENES Y PADDING ***********/
+/************ CORRECCIÓN DE MÁRGEN Y PADDING ***********/
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -548,6 +548,7 @@ td {
 @media (min-width: 768px) { 
     .tablas {
         display: grid;
+        column-gap: 5rem;
         grid-template-columns: repeat(2, 1fr);
      }
 }
@@ -578,11 +579,10 @@ td {
     }
     .que-incluye__grid--item {
         width: 80%;
-        margin: 0 auto;
         justify-content: center;
         text-align: center;
         border-bottom: 1px solid var(--colorGris);
-        margin-bottom: 4rem;
+        margin: 0 auto 4rem;
     }
     .que-incluye__grid--item:last-of-type {
         border-bottom: none;
