@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AtacamaStargazing</title>
+        <link rel="icon" href="img/icono/icono.svg">
+        <meta name="description" content="Tours Astronómicos San Pedro de Atacama">
+
+        <!-- Precarga para mejorar el rendimiento -->
+        <link rel="preload" href="css/normalize.css" as="style">
+        <link rel="preload" href="css/styles.css" as="style">
+        <link rel="preload" href="img/inicio/inicio-background-widescreen.webp" as="image">
+
+        <!-- Normaliza el CSS aplicado en distintos navegadores-->
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <!-- Fuentes utilizadas en el proyecto -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> -->
+
+        <!-- Estilos de CSS añadidos -->
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <a class="navbar__logo" href="index.html">
+                    <img class="navbar__logo--img" src="img/icono/icono.svg" alt="icono">
+                    <h2 class="navbar__logo--texto">AtacamaStargazing</h2>
+                </a>     
+                <div class="navbar__items">
+                    <a class="navbar__items--item" href="index.html"><h4 class="no-margin">Inicio</h4></a>
+                    <a class="navbar__items--item" href="descargas.html"><h4 class="no-margin">Descargas</h4></a>
+                    <a class="navbar__items--item" href="nosotros.html"><h4 class="no-margin">Nosotros</h4></a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <picture>          
+                <source loading="lazy" class="background" type="image/webp" media="(min-width:768px)" srcset="img/inicio/inicio-background-widescreen.webp" alt="Fondo de Pantalla del Inicio">
+                <source loading="lazy" class="background" type="image/jpg" media="(min-width:768px)" srcset="img/inicio/inicio-background-widescreen.jpg" alt="Fondo de Pantalla del Inicio">
+
+                <source loading="lazy" class="background" type="image/webp" media="(min-width:280px)" srcset="img/inicio/inicio-background-HD.webp" alt="Fondo de Pantalla del Inicio">
+                <source loading="lazy" class="background" type="image/jpg" media="(min-width:280px)" srcset="img/inicio/inicio-background-HD.jpg" alt="Fondo de Pantalla del Inicio">
+
+                <img loading="lazy" class="background" src="img/inicio/inicio-background-widescreen.jpg" alt="Fondo de Pantalla del Inicio">
+            </picture>
+            <h1 class="color-blanco">Tour Astronómico<br><span class="color-rojo bolder">+</span><br>Astrofotografía</h1>
+        </main>
+
+        <div class="banner-reserva"> <!-- BANNER -->
+            <a class="boton" href="https://book.atacamastargazing.com/book/tour-astronomico/1?language=es">¡ Reserva Ahora !</a>
+        </div>
+
+        <section class="contenedor"> <!-- LA EXPERIENCIA -->
+            <h2>La Experiencia</h2>
+            <div class="la-experiencia">
+                <picture>
+                    <source 
+                    loading="lazy" 
+                    class="la-experiencia--img b-radius" 
+                    type="image/webp" 
+                    media="(min-width:1280px)" 
+                    srcset="img/inicio/la-experiencia-widescreen.webp" 
+                    alt="La experiencia">
+                    <source 
+                    loading="lazy" 
+                    class="la-experiencia--img b-radius" 
+                    type="image/jpg" 
+                    media="(min-width:1280px)" 
+                    srcset="img/inicio/la-experiencia-widescreen.jpg" 
+                    alt="La experiencia">
+
+                    <source 
+                    loading="lazy" 
+                    class="la-experiencia--img b-radius" 
+                    type="image/webp" 
+                    media="(min-width:768px)" 
+                    srcset="img/inicio/la-experiencia-HD.webp" 
+                    alt="La experiencia">
+                    <source 
+                    loading="lazy" 
+                    class="la-experiencia--img b-radius" 
+                    type="image/jpg" 
+                    media="(min-width:768px)" 
+                    srcset="img/inicio/la-experiencia-HD.jpg" 
+                    alt="La experiencia">
+                    
+                    <source 
+                    loading="lazy" 
+                    class="la-experiencia--img b-radius" 
+                    type="image/webp" 
+                    media="(min-width:280px)" 
+                    srcset="img/inicio/la-experiencia-small.webp" 
+                    alt="La experiencia">
+                    <source 
+                    loading="lazy" 
+                    class="la-experiencia--img b-radius" 
+                    type="image/jpg" 
+                    media="(min-width:280px)" 
+                    srcset="img/inicio/la-experiencia-small.jpg" 
+                    alt="La experiencia">
+
+                    <img 
+                    class="la-experiencia--img b-radius" 
+                    src="img/inicio/la-experiencia-HD.jpg" 
+                    alt="La experiencia">
+                </picture>
+                <div>
+                    <p>Vamos desde los medios e interpretación <strong><em>ancestrales</em></strong> del cielo, hasta la más <strong><em>moderna</em></strong> tecnología de <strong><em>astrofotografía</em></strong> de <strong><em>espacio profundo</em></strong>, similar a la utilizada en los observatorios de investigación <strong><em>científica</em></strong>, haciéndote parte del proceso y brindándote un disfrute integral de la <strong><em>astronomía</em></strong> y la <strong><em>cultura atacameña</em></strong>; explicados en palabras simples y ejemplos que toda la <strong><em>familia</em></strong>, incluyendo a los más pequeños podrán disfrutar y entender.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="banner-reserva"> <!-- BANNER -->
+            <a class="boton" href="https://book.atacamastargazing.com/book/tour-astronomico/1?language=es">¡ Reserva Ahora !</a>
+        </div>
+
+        <section class="contenedor"> <!-- ACOMPAÑANOS -->
+            <h2>Acompañanos</h2>
+            <div class="ven-a-disfrutar">
+                <div class="ven-a-disfrutar__textos">
+                    <h3 class="ven-a-disfrutar__textos--titulos">Ven a disfrutar</h3>
+                    <h4 class="ven-a-disfrutar__textos--titulos">¿Cuándo?</h4>
+                    <p>Cada noche después de la puesta de sol.<br><a href="#tabla-horarios">(ver horarios por temporada)</a></p>
+                    <h4 class="ven-a-disfrutar__textos--titulos">¿Dónde?</h4>
+                    <p><strong>En el Desierto de Atacama</strong>, bajo uno de los mejores cielos del mundo para la observación astronómica.</p>
+                    <p><strong>PickUp y Retorno</strong> al hotel (dentro de las áreas de coberuta).</p>
+                    <p><strong>Duración</strong>: 2 horas aprox.</p>
+                </div>
+                <div id="tabla-horarios">
+                    <h4>HORARIOS POR TEMPORADA</h4>
+                    <div class="tablas">
+                        <table> <!-- TURNO 1 -->
+                            <tr>
+                                <td class="titulo-tabla" colspan="3"> TURNO 1</td>
+                            </tr>
+                            <tr>
+                                <th>TEMPORADA</th>
+                                <th>PickUp</th>
+                                <th>Regreso</th>
+                            </tr>
+                            <tr>
+                                <td>Enero y Febrero</td>
+                                <td>21:10 a<br>21:45</td>
+                                <td>0:00</td>
+                            </tr>
+                            <tr>
+                                <td>Marzo al 1er<br>Sábado de Abril</td>
+                                <td>20:40 a<br>21:15</td>
+                                <td>23:30</td>
+                            </tr>
+                            <tr>
+                                <td>1er Domingo de<br>Abril y<br>todo Mayo</td>
+                                <td>19:10 a<br>19:45</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Junio y Julio</td>
+                                <td>18:40 a<br>19:15</td>
+                                <td>21:30</td>
+                            </tr>
+                            <tr>
+                                <td>Agosto hasta el<br>1er Sábado de<br>Septiembre</td>
+                                <td>19:10 a<br>19:45</td>
+                                <td>22:00</td>
+                            </tr>
+                            <tr>
+                                <td>1er Domingo de<br>Septiembre y<br>todo Octubre</td>
+                                <td>20:10 a<br>20:45</td>
+                                <td>23:00</td>
+                            </tr>
+                            <tr>
+                                <td>Noviembre y<br>Diciembre</td>
+                                <td>20:40 a<br>21:15</td>
+                                <td>23:30</td>
+                            </tr>
+                        </table>
+                        <table> <!-- TURNO 2 -->
+                            <tr>
+                                <td class="titulo-tabla" colspan="3"> TURNO 2</td>
+                            </tr>
+                            <tr>
+                                <th>TEMPORADA</th>
+                                <th>PickUp</th>
+                                <th>Regreso</th>
+                            </tr>
+                            <tr>
+                                <td>Enero y Febrero</td>
+                                <td>23:10 a<br>23:45</td>
+                                <td>2:00</td>
+                            </tr>
+                            <tr>
+                                <td>Marzo al 1er<br>Sábado de Abril</td>
+                                <td>22:40 a<br>23:15</td>
+                                <td>1:30</td>
+                            </tr>
+                            <tr>
+                                <td>1er Domingo de<br>Abril y<br>todo Mayo</td>
+                                <td>21:10 a<br>21:45</td>
+                                <td>0:00</td>
+                            </tr>
+                            <tr>
+                                <td>Junio y Julio</td>
+                                <td>20:40 a<br>21:15</td>
+                                <td>23:30</td>
+                            </tr>
+                            <tr>
+                                <td>Agosto hasta el<br>1er Sábado de<br>Septiembre</td>
+                                <td>21:10 a<br>21:45</td>
+                                <td>0:00</td>
+                            </tr>
+                            <tr>
+                                <td>1er Domingo de<br>Septiembre y<br>todo Octubre</td>
+                                <td>22:10 a<br>22:45</td>
+                                <td>1:00</td>
+                            </tr>
+                            <tr>
+                                <td>Noviembre y<br>Diciembre</td>
+                                <td>22:40 a<br>23:15</td>
+                                <td>1:30</td>
+                            </tr>
+                        </table>
+                    </div> <!-- .tablas -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <div class="banner-reserva"> <!-- BANNER -->
+            <a class="boton" href="https://book.atacamastargazing.com/book/tour-astronomico/1?language=es">¡ Reserva Ahora !</a>
+        </div>
+
+        <section class="contenedor"> <!-- QUE INCLUYE -->   
+            <h2>¿ Qué Incluye ?</h2>
+            <div class="que-incluye__grid">
+                <div class="que-incluye__grid--item">
+                    <picture>
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/webp" 
+                        media="(min-width:1280px)" 
+                        srcset="img/inicio/telescopio-widescreen.webp" 
+                        alt="Telescopio">
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/jpg" 
+                        media="(min-width:1280px)" 
+                        srcset="img/inicio/telescopio-widescreen.jpg" 
+                        alt="Telescopio">
+
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/webp" 
+                        media="(min-width:768px)" 
+                        srcset="img/inicio/telescopio-HD.webp" 
+                        alt="Telescopio">
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/jpg" 
+                        media="(min-width:768px)" 
+                        srcset="img/inicio/telescopio-HD.jpg" 
+                        alt="Telescopio">
+
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/webp" 
+                        media="(min-width:280px)" 
+                        srcset="img/inicio/telescopio-small.webp" 
+                        alt="Telescopio">
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/jpg"
+                        media="(min-width:280px)" 
+                        srcset="img/inicio/telescopio-small.jpg" 
+                        alt="Telescopio">
+
+                        <img 
+                        class="que-incluye--img b-radius" 
+                        src="img/inicio/telescopio-HD.jpg" 
+                        alt="Telescopio">
+                    </picture>
+                    <h3>Telescopio</h3>
+                    <p> Te llevamos a ver el cielo en el desierto con el telescopio mas grande que se puede transportar <em>(Dobson de 12")</em>, tan grande como una persona</p>
+                </div>
+                <div class="que-incluye__grid--item">
+                    <picture>
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/webp" 
+                        media="(min-width:1280px)" 
+                        srcset="img/inicio/cosmovision-widescreen.webp" 
+                        alt="Cosmovisión Andina">
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/jpg" 
+                        media="(min-width:1280px)" 
+                        srcset="img/inicio/cosmovision-widescreen.jpg" 
+                        alt="Cosmovisión Andina">
+
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/webp" 
+                        media="(min-width:768px)" 
+                        srcset="img/inicio/cosmovision-HD.webp" 
+                        alt="Cosmovisión Andina">
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/jpg" 
+                        media="(min-width:768px)" 
+                        srcset="img/inicio/cosmovision-HD.jpg" 
+                        alt="Cosmovisión Andina">
+
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/webp" 
+                        media="(min-width:280px)" 
+                        srcset="img/inicio/cosmovision-small.webp" 
+                        alt="Cosmovisión Andina">
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/jpg"
+                        media="(min-width:280px)" 
+                        srcset="img/inicio/cosmovision-small.jpg" 
+                        alt="Cosmovisión Andina">
+
+                        <img 
+                        class="que-incluye--img b-radius" 
+                        src="img/inicio/cosmovision-HD.jpg" 
+                        alt="Cosmovisión Andina">    
+                    </picture>
+                    <h3>Cosmovisión Andina</h3>
+                    <p>Te invitamos a conocer acerca de las creencias ancestrales de los pueblos andinos, mientras compartimos un delicioso snack que incluye productos locales.</p>
+                </div>
+                <div class="que-incluye__grid--item">
+                    <picture>
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/webp" 
+                        media="(min-width:1280px)" 
+                        srcset="img/inicio/fotografia-widescreen.webp" 
+                        alt="Fotografía">
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/jpg" 
+                        media="(min-width:1280px)" 
+                        srcset="img/inicio/fotografia-widescreen.jpg" 
+                        alt="Fotografía">
+
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/webp" 
+                        media="(min-width:768px)" 
+                        srcset="img/inicio/fotografia-HD.webp" 
+                        alt="Fotografía">
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/jpg" 
+                        media="(min-width:768px)" 
+                        srcset="img/inicio/fotografia-HD.jpg" 
+                        alt="Fotografía">
+
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/webp" 
+                        media="(min-width:280px)" 
+                        srcset="img/inicio/fotografia-small.webp" 
+                        alt="Fotografía">
+                        <source 
+                        loading="lazy" 
+                        class="que-incluye--img b-radius" 
+                        type="image/jpg"
+                        media="(min-width:280px)" 
+                        srcset="img/inicio/fotografia-small.jpg" 
+                        alt="Fotografía">
+
+                        <img 
+                        class="que-incluye--img b-radius" 
+                        src="img/inicio/fotografia-HD.jpg" 
+                        alt="Fotografía">
+                    </picture>
+                    <h3>Fotografía</h3>
+                    <p>Donde capturamos la belleza del cielo atacameño para que te lleves un hermoso recuerdo de la experiencia (hasta 3 por persona)</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="banner-reserva"> <!-- BANNER -->
+            <a class="boton" href="https://book.atacamastargazing.com/book/tour-astronomico/1?language=es">¡ Reserva Ahora !</a>
+        </div>
+
+        <section class="contenedor"> <!-- RECOMENDACIONES -->
+            <h2>Recomendaciones</h2>
+            <div class="recomendaciones">
+                <picture>
+
+                    <source 
+                    loading="lazy" 
+                    class="recomendaciones--img b-radius" 
+                    type="image/webp" 
+                    media="(min-width:768px)" 
+                    srcset="img/inicio/recomendaciones-HD.webp" 
+                    alt="Recomendaciones">
+                    <source 
+                    loading="lazy" 
+                    class="recomendaciones--img b-radius" 
+                    type="image/jpg" 
+                    media="(min-width:768px)" 
+                    srcset="img/inicio/recomendaciones-HD.jpg" 
+                    alt="Recomendaciones">
+                    
+                    <source 
+                    loading="lazy" 
+                    class="recomendaciones--img b-radius" 
+                    type="image/webp" 
+                    media="(min-width:280px)" 
+                    srcset="img/inicio/recomendaciones-small.webp" 
+                    alt="Recomendaciones">
+                    <source 
+                    loading="lazy" 
+                    class="recomendaciones--img b-radius" 
+                    type="image/jpg" 
+                    media="(min-width:280px)" 
+                    srcset="img/inicio/recomendaciones-smal.jpg" 
+                    alt="Recomendaciones">
+    
+                    <img 
+                    class="recomendaciones--img b-radius" 
+                    src="img/inicio/recomendaciones-HD.jpg" 
+                    alt="Recomendaciones">
+                </picture>
+                <div class="recomendaciones__grid--texto">
+                    <h3>Vestimenta</h3>
+                    <p><strong>VERANO:</strong></p>
+                    <p>Llevar ropa de abrigo y cortaviento, la temperatura puede descender hasta los 9 grados con algo de viento.</p>
+                    <p><strong>INVIERNO:</strong></p>
+                    <p>Llevar las tres capas, tanto para la parte superior como para las piernas; se esperan temperaturas rondando los 0 grados con algo de viento.</p>
+                    <p><strong>COLORES:</strong></p>
+                    <p>Recomendamos ropa y/o accesorios con colores vivos, esto te ayudará a resaltar y enriquecer tu fotografía.</p>
+                    <p><strong>NIÑOS:</strong></p>
+                    <p>Nuestra experiencia está diseñada para el disfrute de toda la familia, por este motivo, cada niño debe venir acompañado de su persona responsable, que se encargará de su atención, abrigo y seguridad durante el tour, evitando así que incomode a los demás pasajeros.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="banner-reserva"> <!-- BANNER -->
+            <a class="boton" href="https://book.atacamastargazing.com/book/tour-astronomico/1?language=es">¡ Reserva Ahora !</a>
+        </div>
+        <footer>
+            <div class="Copyright">
+                <p>&#169 AtacamaStargazing<br>Todos los derechos reservados 2022.</p>
+            </div>
+        </footer>
+        <a href="https://wa.me/56935880094/?text=Hola,%20quisiera%20reservar." class="float" target="_blank">
+            <img class="my-float" src="img/icono/whatsapp-brands.svg" alt="Icono whatsapp">
+        </a>
+
+    </body>
+
+</html>

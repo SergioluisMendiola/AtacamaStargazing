@@ -1,0 +1,703 @@
+/***************** VARIABLES PRINCIPALES *****************/
+:root {
+    /* FUENTES PRINCIPALES */
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrofos: 'Open Sans', sans-serif;
+    /* PALETA DE COLORES */
+    --colorBlanco: #ffffff;
+    --colorOscuro: #212121;
+    --colorPrimario: #FFC107;
+    --colorPrimarioOscuro: #e6ae07;
+    --colorSecundario: #13626E;
+    --colorGris: #2a2a2a;
+    --colorGrisClaro: #dee9f3;
+}
+/*********************************************************/
+
+
+/************ CORRECCIÓN DE MARGENES Y PADDING ***********/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+/*********************************************************/
+
+
+/************************ FUENTES ************************/
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v29-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v29-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v29-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v29-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v29-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v29-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+/* pt-sans-regular - latin */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/pt-sans-v17-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/pt-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/pt-sans-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/pt-sans-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/pt-sans-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/pt-sans-v17-latin-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+  }
+  /* pt-sans-700 - latin */
+  @font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/pt-sans-v17-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/pt-sans-v17-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/pt-sans-v17-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/pt-sans-v17-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/pt-sans-v17-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/pt-sans-v17-latin-700.svg#PTSans') format('svg'); /* Legacy iOS */
+  }
+/*********************************************************/
+
+
+/*********************** UTILIDADES **********************/
+.b-radius {
+    border-radius: 1.5rem;
+}
+.color-rojo {
+    color: red;
+}
+.banner-reserva {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--colorGrisClaro);
+    display: flex;
+    justify-content: center;
+}
+.bolder {
+    font-weight: bolder;
+}
+.boton {
+    -webkit-border-radius: 1.3rem;
+    -moz-border-radius: 1.3rem;
+    border-radius: 1.3rem;
+    -webkit-box-shadow: 0.2rem 0.2rem 1.8rem var(--colorGris);
+    -moz-box-shadow: 0.2rem 0.2rem 1.8rem var(--colorGris);
+    box-shadow: 0.2rem 0.2rem 1.8rem var(--colorGris);
+    font-family: var(--fuenteParrofos);
+    color: var(--colorOscuro);
+    font-weight: 900;
+    background: var(--colorPrimarioOscuro);
+    padding: 1.6rem 3.2rem;
+    text-decoration: none;
+    width: 90%;
+    transition: width 0.5s, background-color 0.5s;
+}
+.boton:hover {
+    background: var(--colorPrimario);
+    text-decoration: none;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+        padding: 1.6rem 3.2rem;
+        transition: width 0.5s, background-color 0.5s, padding 0.5s;
+    }
+    .boton:hover {
+        background: var(--colorPrimario);
+        width: auto;
+        padding: 1.6rem 4rem;
+    }
+}
+.color-blanco {
+    color: var(--colorBlanco);
+}
+.color-primario {
+    color: var(--colorPrimario);
+}
+.color-oscuro {
+    color: var(--colorOscuro);
+}
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 2rem auto;
+}
+.no-margin {
+    margin: 0;
+}
+
+/* WHATSAPP FLOATING ICON */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:78px;
+	right:10px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+    transition: ease background-color 0.5s, ease color 0.5s, ease box-shadow 0.5s ;
+}
+.float:hover {
+    box-shadow: 2px 2px 15px var(--colorGris);
+    background-color:var(--colorBlanco);
+    color: #25d366;
+}
+.my-float{
+    margin-top: 10px;
+    filter: invert(100%);
+    width: 40px;
+    height: 40px;
+    transition: ease filter 0.5s;
+}
+.my-float:hover{
+    filter: invert(0);
+}
+
+@media (min-width: 280px) {
+    .float{
+        bottom: 77.18px;
+    }
+}
+@media (min-width: 286px) {
+    .float{
+        bottom: 58.79px;
+    }
+}
+@media (min-width: 320px) {
+    .float{
+        bottom:59px;
+    }
+}
+@media (min-width: 480px) {
+    .float{
+        bottom:68px;
+    }
+}
+@media (min-width: 560px) {
+    .float{
+        bottom:78px;
+        right: 20px;
+    }
+}
+@media (min-width: 1024px) {
+    .float{
+        bottom:87.2px;
+    }
+}
+@media (min-width: 1280px) {
+    .float{
+        bottom:96.39px;
+    }
+}
+/*********************************************************/
+
+
+/************************ GLOBALES ***********************/
+* {
+    text-decoration: none;
+}
+h1, h2, h3, h4, a {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+    text-align: center;
+}
+a {
+    color: var(--colorSecundario);
+}
+p {
+    text-align: justify;
+    font-family: var(--fuenteParrofos);
+}
+table, tr, th, td {
+    text-align: center;
+    font-family: var(--fuenteHeading);
+    padding: 0.25rem;
+}
+th {
+    border: 1.5px solid var(--colorBlanco);
+    background-color: var(--colorPrimarioOscuro);
+}
+td {
+    border: 2px solid var(--colorBlanco);
+    background-color: var(--colorGrisClaro);
+}
+/****** SMARTPHONE S SIZE ******/
+@media (min-width: 280px) {
+    p {
+        font-size: 1.6rem;
+    }
+    h4, a {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+        margin-bottom: 1.5rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
+/****** SMARTPHONE L SIZE ******/
+@media (min-width: 480px) {
+    p {
+        font-size: 2rem;
+    }
+    h4, a {
+        font-size: 2.2rem;
+    }
+    h3 {
+        font-size: 2.6rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h1 {
+        font-size: 3.4rem;
+    }
+}
+/********* TABLET SIZE *********/
+@media (min-width: 768px) {
+    
+}
+/********* LAPTOP SIZE *********/
+@media (min-width: 1024px) {
+    p {
+        font-size: 2.4rem;
+    }
+    h4, a {
+        font-size: 2.6rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 3.4rem;
+    }
+    h1 {
+        font-size: 3.8rem;
+    }
+}
+/****** WIDE SCREEN SIZE ******/
+@media (min-width: 1280px) {
+    p {
+        font-size: 2.8rem;
+    }
+    h4, a {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 3.4rem;
+    }
+    h2 {
+        font-size: 3.8rem;
+    }
+    h1 {
+        font-size: 4.2rem;
+    }
+}
+/*********************************************************/
+
+
+/************************ HEADING ************************/
+
+/****** SMARTPHONE S SIZE ******/
+@media (min-width: 280px) {
+    .navbar {
+        background-color: var(--colorSecundario);
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 1030;
+    }
+    .navbar__logo {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    .navbar__logo--img {
+        filter: invert(100%);
+        width: 2.6rem;
+        height: auto;
+    }
+    .navbar__logo--texto,
+    .navbar__items--item {
+        color: var(--colorBlanco);
+        text-align: center;
+    }
+    .navbar__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 0.5rem;
+        align-items: center;
+    }
+
+    .navbar__logo--texto {
+        margin: 0;
+    }
+    .navbar__items--item {
+        padding: 1rem;
+    }
+    .navbar__items--item:hover {
+        background-color: var(--colorPrimario);
+        color: var(--colorOscuro);
+    }
+}
+/********* TABLET SIZE *********/
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar__logo {
+        justify-content: left;
+    }
+    .navbar__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: unset;
+        align-items: center;
+        column-gap: 1rem;
+    }
+    .navbar__items--item:hover {
+        background-color: var(--colorSecundario);
+        color: var(--colorPrimario);
+    }
+    .navbar__logo--img {
+        width: 3rem;
+    }
+}
+/********* LAPTOP SIZE *********/
+@media (min-width: 1024px) {
+    .navbar__logo--img {
+        width: 3.4rem;
+    }   
+}
+/****** WIDE SCREEN SIZE ******/
+@media (min-width: 1280px) {
+    .navbar__logo--img {
+        width: 3.8rem;
+    }
+}
+/*********************************************************/
+
+
+/********************** MAIN-Inicio **********************/
+/****** SMARTPHONE S SIZE ******/
+@media (min-width: 280px) {
+    .background {
+        width: 100%;
+        height: 40rem;
+        padding-top: 80.59px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    main {
+        height: 40rem;
+    }
+    main h1 {
+        position: relative;
+        top: -24rem;
+        right: auto;
+    }
+}
+/****** SMARTPHONE L SIZE ******/
+@media (min-width: 480px) {
+    .background {
+        padding-top: 89.795px;
+    }
+}
+/********* TABLET SIZE *********/
+@media (min-width: 768px) {
+    main {
+        height: 50rem;
+    }
+    main h1 {
+        top: -32rem;
+    }
+    .background {
+        height: 50rem;
+        padding-top: 45.29px;
+    }
+}
+/********* LAPTOP SIZE *********/
+@media (min-width: 1024px) {
+    main h1 {
+        top: -33rem;
+    }
+    .background {
+        height: 50rem;
+        padding-top: 49.893px;
+    }
+}
+/****** WIDE SCREEN SIZE ******/
+@media (min-width: 1280px) {
+    main {
+        height: 60rem;
+    }
+    main h1 {
+        top: -39rem;
+    }
+    .background {
+        height: 60rem;
+        padding-top: 54.5px;
+    }
+}
+@media (min-width: 1440px) {
+    main {
+        height: 70rem;
+    }
+    main h1 {
+        top: -44rem;
+    }
+    .background {
+        height: 70rem;
+        padding-top: 54.5px;
+    }
+}
+/*********************************************************/
+
+
+/********************* LA EXPERIENCIA ********************/
+/****** SMARTPHONE S SIZE ******/
+@media (min-width: 280px) {
+        .la-experiencia {
+            margin: 0 auto;
+        }
+        .la-experiencia--img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        aspect-ratio: 16 / 9;
+    }
+}
+/********* TABLET SIZE *********/
+@media (min-width: 768px) {
+    .la-experiencia {
+        display: flex;
+        flex-direction: row;
+    }
+    .la-experiencia picture,
+    .la-experiencia div {
+        flex-basis: 50%;
+    }
+    .la-experiencia--img {
+        width: 100%;
+        height: 100%;
+    }
+    .la-experiencia p {
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+        /* text-align: left; */
+    }
+}
+/*********************************************************/
+
+
+/********************** ACOMPAÑANOS **********************/
+/****** SMARTPHONE S SIZE ******/
+@media (min-width: 280px) {
+    table, tr, th, td {
+        font-size: 1.6rem;
+        width: auto;
+    }
+    .ven-a-disfrutar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ven-a-disfrutar h4 {
+        margin-bottom: 1rem;
+    }
+    .titulo-tabla {
+        background-color: var(--colorGris);
+        color: var(--colorPrimario);
+        font-weight: bolder;
+     }
+    .ven-a-disfrutar__textos--titulos {
+        text-align: left;
+    }
+}
+/****** SMARTPHONE L SIZE ******/
+@media (min-width: 480px) {
+    table, tr, th, td {
+        font-size: 1.8rem;
+    }
+}
+/********* TABLET SIZE *********/
+@media (min-width: 768px) { 
+    .tablas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+     }
+}
+/********* LAPTOP SIZE *********/
+@media (min-width: 1024px) { 
+    table, tr, th, td {
+        font-size: 2rem;
+    }
+}
+/****** WIDE SCREEN SIZE ******/
+@media (min-width: 1280px) {
+    table, tr, th, td {
+        font-size: 2.2rem;
+    }
+}
+/*********************************************************/
+
+
+/********************** QUE INCLUYE **********************/
+/***** SMARTPHONE SS SIZE ******/
+@media (min-width: 280px) {
+    .que-incluye--img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        
+    }
+    .que-incluye__grid--item {
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 1px solid var(--colorGris);
+        margin-bottom: 4rem;
+    }
+    .que-incluye__grid--item:last-of-type {
+        border-bottom: none;
+    }
+    .que-incluye__grid--item  h3{
+        margin: 1.5rem auto;
+    }
+
+}
+/********* LAPTOP SIZE *********/
+@media (min-width: 1024px) { 
+    .que-incluye__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        column-gap: 4rem;
+    }
+    .que-incluye__grid--item {
+        width: 100%;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+}
+/*********************************************************/
+
+
+/******************** RECOMENDACIONES ********************/
+@media (min-width: 280px) {
+    .recomendaciones {
+        text-align: center;
+    }
+    .recomendaciones--img {
+        width: 60%;
+        height: auto;
+    }
+}
+/*********************************************************/
+
+
+/************************* FOOTER ************************/
+    .Copyright {
+        background-color: var(--colorOscuro);
+        color: var(--colorBlanco);
+        padding: 0.1rem;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+        transition: bottom 1s;
+    }
+    .Copyright p {
+        text-align: center;
+        margin: 0.5rem;
+    }
+    .banner-reserva:last-of-type {
+        margin-bottom: 7.6rem;
+    }
+/*********************************************************/
+
+
+/*********************** CALENDARIOS *********************/
+.calendarios {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+.mes {
+    margin-top: 5rem;
+    text-align: center;
+    padding-top: 2rem;
+    border-bottom: 0.1rem solid var(--colorGris);
+    margin-bottom: 2rem;
+    padding-bottom: 5rem;    
+}
+.mes:last-of-type {
+    border:none;
+}
+.mes-img source,
+.mes-img img {
+    width: 32rem;
+    height: 32rem;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 0.5rem;
+}
+.enabled:hover {
+    background-color: var(--colorSecundario);
+    color: var(--colorPrimario);
+}
+.enabled:hover a {
+    font-weight: bolder;
+    width: 100%;
+    height: 100%;
+    color: var(--colorPrimario);
+}
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+    color: var(--colorGris);
+  }
+@media (min-width: 1024px) {
+    .calendarios {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 0.2rem;
+    }
+    .mes {
+        border:none;
+    }
+    .mes table {
+        margin: 0 auto;
+    }
+    .mes-img {
+        margin: 0 auto;
+    }
+}
+/*********************************************************/
