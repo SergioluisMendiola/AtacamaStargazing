@@ -655,6 +655,7 @@ td {
         transition: bottom 1s;
     }
     .Copyright p {
+        font-size: 1.6rem;
         text-align: center;
         margin: 0.5rem;
     }
