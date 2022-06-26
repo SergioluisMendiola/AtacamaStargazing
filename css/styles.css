@@ -506,6 +506,16 @@ td {
     .ven-a-disfrutar__textos--titulos {
         text-align: left;
     }
+    .tablas {
+        display: grid;
+        gap: 4rem;   
+    }
+}
+@media (min-width: 768px) {
+    .tablas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
 }
 /*********************************************************/
 
