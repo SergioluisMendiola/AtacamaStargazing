@@ -335,6 +335,12 @@ td {
 
 /************************ HEADING ************************/
 
+.navbar h2 {
+    font-size: 2rem;
+}
+.navbar h4 {
+    font-size: 1.8rem;
+}
 /****** SMARTPHONE S SIZE ******/
 @media (min-width: 280px) {
     .navbar {
@@ -368,7 +374,7 @@ td {
     }
 
     .navbar__logo--texto {
-        margin: 0;
+        margin: auto auto;
     }
     .navbar__items--item {
         padding: 1rem;
