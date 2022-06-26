@@ -320,7 +320,7 @@ td {
     }
 
     .navbar__logo--texto {
-        margin: auto auto;
+        margin: auto 0;
     }
     .navbar__items--item {
         padding: 1rem;
@@ -352,21 +352,6 @@ td {
         background-color: var(--colorSecundario);
         color: var(--colorPrimario);
         border: 0;
-    }
-    .navbar__logo--img {
-        width: 3rem;
-    }
-}
-/********* LAPTOP SIZE *********/
-@media (min-width: 1024px) {
-    .navbar__logo--img {
-        width: 3.4rem;
-    }   
-}
-/****** WIDE SCREEN SIZE ******/
-@media (min-width: 1280px) {
-    .navbar__logo--img {
-        width: 3.8rem;
     }
 }
 /*********************************************************/
@@ -415,7 +400,7 @@ td {
     }
     .background {
         height: 50rem;
-        padding-top: 4.4rem;
+        padding-top: 4.07rem;
     }
 }
 /****** WIDE SCREEN SIZE ******/
@@ -428,7 +413,6 @@ td {
     }
     .background {
         height: 60rem;
-        padding-top: 4.8rem;
     }
 }
 @media (min-width: 1440px) {
