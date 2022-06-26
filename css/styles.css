@@ -10,7 +10,7 @@
     --colorPrimarioOscuro: #e6ae07;
     --colorSecundario: #13626E;
     --colorGris: #2a2a2a;
-    --colorGrisClaro: #dee9f3;
+    --colorGrisClaro: #f5f5f7;
 }
 /*********************************************************/
 
@@ -74,7 +74,7 @@ html {
 
 /*********************** UTILIDADES **********************/
 .b-radius {
-    border-radius: 5%;
+    border-radius: 0.5rem;
 }
 .color-rojo {
     color: red;
